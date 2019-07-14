@@ -1,0 +1,11 @@
+/* pages/base/base.wxss */
+.but{
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.img{
+  display: block;
+  margin: 10px auto;
+}

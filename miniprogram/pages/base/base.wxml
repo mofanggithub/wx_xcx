@@ -1,0 +1,19 @@
+<!--pages/base/base.wxml-->
+<view>{{count}}</view>
+<button size='mini' class='but' bindtap='add'>点击加1</button>
+<button class='but' bindtap='insert'>插入数据</button>
+<button class='but' bindtap='update'>更新数据</button>
+<button class='but' bindtap='remove'>删除数据</button>
+<button class='but' bindtap='search'>查找数据</button>
+<view>云函数demo</view>
+<button class='but' bindtap='sum'>调用云函数sum</button>
+<button class='but' bindtap='getId'>获取OpenId</button>
+<button class='but' bindtap='batchDelete'>云函数批量伤处数据库数据</button>
+<view>云存储</view>
+<button class='but' bindtap='upload'>上传图片</button>
+<button class='but' bindtap='getFile'>图片展示</button>
+
+<block wx:for="{{images}}">
+  <image class='img' src='{{item.fileID}}'></image>
+  <button bindtap='download' data-fileid='{{item.fileID}}' class='but'>下载该图片</button>
+</block>
